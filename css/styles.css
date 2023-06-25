@@ -243,15 +243,15 @@ img{
 }
 
 /*?------About us------*/
+.features {
 
-.features{
-    
     width: 100%;
     padding: 96px 0;
+    margin: 0 auto;
 }
 
-.features-menu{
-    
+.features-menu {
+
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
@@ -268,16 +268,22 @@ img{
     text-transform: capitalize;
     color: #2E2F42;
     margin-bottom: 8px;
+    text-align: center;
+   
+        
+    
+    
 }
 
-.features-item{
+.features-item {
     /*width: calc(( 100% - ( 24px * 3 ) / 4 ));*/
     width: 100%;
-    
+    height: auto;
+
 }
 
 .features-item-text {
-    
+
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -307,12 +313,12 @@ img{
 */
 /*-------What are we doing---------*/
 
-
-.work{
+.work {
     padding-top: 0;
     padding-bottom: 120px;
 }
-.work-subtitle{
+
+.work-subtitle {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -322,43 +328,45 @@ img{
     color: var(--title-color);
     margin-bottom: 72px;
 }
-.work-menu{
+
+.work-menu {
     display: flex;
     gap: 24px;
-    
+
 }
-.work-item{
+
+.work-item {
     width: calc((100% - 48px / 3));
-  
+
 }
+
 
 /*?-------Team-------*/
-
-.team{
+.team {
 
     background-color: #F4F4FD;
     padding: 120px 0;
-  
+
 }
 
-.team-menu{
+.team-menu {
 
-   display: flex;
+    display: flex;
     gap: 24px;
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-item{
+.team-item {
 
     background-color: #FFFFFF;
-    width: calc((100% - 72px ) / 4 );
+    width: calc((100% - 72px) / 4);
     gap: 24px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    
+
 }
 
-.team-subtitle{
+.team-subtitle {
 
     font-weight: 700;
     font-size: 36px;
@@ -367,12 +375,12 @@ img{
     text-transform: capitalize;
     text-align: center;
     color: var(--title-color);
-    
+
     margin-bottom: 72px;
-     
+
 }
 
-.team-member{
+.team-member {
 
     font-weight: 500;
     font-size: 20px;
@@ -381,42 +389,43 @@ img{
     color: #2E2F42;
     text-align: center;
     margin-bottom: 8px;
-    
+
 }
 
-.team-member-position{
+.team-member-position {
 
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
-   
+
 }
 
-.name-position{
+.name-position {
     padding: 32px 0;
 }
 
 
-.member-icon-list{
+.member-icon-list {
     display: flex;
     justify-content: center;
-    gap:24px;
-  
+    gap: 24px;
+
 }
 
-  .member-icon-item {
+.member-icon-item {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 24px;
     width: 40px;
     height: 40px;
-    
 
-  }
-.member-icon-link{
+
+}
+
+.member-icon-link {
     width: 100%;
     height: 100%;
     background-color: #4D5AE5;
@@ -429,12 +438,13 @@ img{
 }
 
 .member-icon-link:hover,
-.member-icon-link:focus{
+.member-icon-link:focus {
     background-color: #404BBF;
 }
-   .member-icon{
+
+.member-icon {
     fill: #f4f4fd;
-   }
+}
 
 
    .customers{
