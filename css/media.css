@@ -11,7 +11,6 @@
     }
 
     .subscribe-input {
-        
         width: 398px;
     }
 
@@ -25,9 +24,7 @@
     .container {
         max-width: 768px;
        
-
     }
-
 
     .features-item {
         max-width: unset;
@@ -65,8 +62,57 @@
         gap: 72px 24px;
     }
 
+    .footer-container{
+       
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        max-width: 584px;
+        text-align: start;
+        justify-content: unset;
         
+        
+        
+      
+    }
+    .footer-logo-text{
+        margin: unset; 
+        
+    }
+    .footer-text{
+        
+        max-width: 264px;
+        margin-bottom: 72px;
+        margin-right: 24px;
+
+    }
+
+    .footer-logo{
+        
+        margin-right: 24px;
+        text-align: start;
+    }
+
+    .social-text{
+        text-align: start;
+    }
+
+
+    .subscribe-input {
+      
+        width: 264px;
+
+    }
     
+    .form-subscribe{
+        flex-direction: row;
+       
+
+    }
+
+    .subscribe-text{
+        text-align: start;
+    }
 
 }
 
