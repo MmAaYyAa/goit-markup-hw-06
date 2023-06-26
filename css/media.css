@@ -72,8 +72,6 @@
         text-align: start;
         justify-content: unset;
         
-        
-        
       
     }
     .footer-logo-text{
@@ -83,7 +81,6 @@
     .footer-text{
         
         max-width: 264px;
-        
         margin-right: 24px;
 
     }
@@ -219,6 +216,25 @@
         .customers-item{
             width: calc((100% - 120px)/ 6);
             height: 88px;
+        }
+
+        .footer-container{
+            width: 100%;
+           
+          
+        }
+        .footer-logo-text{
+            margin-right: 120px;
+        
+        }
+
+        .footer-text{
+            margin-right: 0;
+           
+        }
+
+        .footer-social{
+            margin-right: 80px;
         }
 
 
