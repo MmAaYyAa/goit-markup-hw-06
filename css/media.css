@@ -26,6 +26,20 @@
        
     }
 
+    .hero{
+        padding: 112px 0;
+    }
+
+    .hero-title{
+
+        padding-bottom: 36px;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        max-width: 496px;
+    }
+
     .features-item {
         max-width: unset;
         width: calc((100% - 24px)/2);
@@ -41,7 +55,7 @@
         text-align: left;
 
     }
-
+    
     .team-menu{
         gap: 64px 24px;
     }
@@ -124,7 +138,15 @@
     .container {
         max-width: 1158px;
     }
+    
+    .hero {
+        padding: 188px 0;
+    }
 
+    .hero-title {
+        
+        padding-bottom: 36px;
+    }
 
     .features {
         width: 100%;
