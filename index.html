@@ -55,14 +55,14 @@
             </li>
           </ul>
         </address>
-        <button class="open-menu-button" type="button" data-menu-open>
+        <button class="open-menu-button js-open-menu" type="button">
           <svg class="open-burger" width="32" height="22">
             <use href="./images/icons.svg#icon-menu-hamburger"></use>
           </svg>
         </button>
-        <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-menu is-hidden js-menu-container">
           <div>
-            <button type="button" class="close-menu-button" data-menu-close>
+            <button type="button" class="close-menu-button js-close-menu">
               <svg class="close-burger" width="8" height="8">
                 <use href="./images/icons.svg#icon-close-menu-burger"></use>
               </svg>
@@ -238,6 +238,7 @@
           <ul class="work-menu list">
             <li class="work-item">
               <img
+                srcset="./images/screen1x.jpg 1x, ./images/screen2x.jpg 2x"
                 src="./images/box1.jpg"
                 alt="display"
                 width="360"
@@ -246,6 +247,10 @@
             </li>
             <li class="work-item">
               <img
+                srcset="
+                  ./images/screen-app1x.jpg 1x,
+                  ./images/screen-app2x.jpg 2x
+                "
                 src="./images/img2.jpg"
                 alt="phonescreen"
                 width="360"
@@ -254,6 +259,10 @@
             </li>
             <li class="work-item">
               <img
+                srcset="
+                  ./images/screen2-app1x.jpg 1x,
+                  ./images/screen2-app2x.jpg 2x
+                "
                 src="./images/img3.jpg"
                 alt="display-and-phonescreen"
                 width="360"
@@ -273,6 +282,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/mark1x.jpg 1x, ./images/mark2x.jpg 2x"
                 src="./images/img-min.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -337,6 +347,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/tom1x.jpg 1x, ./images/tom2x.jpg 2x"
                 src="./images/img4-min.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -401,6 +412,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/camila1x.jpg 1x, ./images/camila2x.jpg 2x"
                 src="./images/img5-min.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -465,6 +477,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/daniel1x.jpg 1x, ./images/daniel2x.jpg 2x"
                 src="./images/img6-min.jpg"
                 alt="Daniel Wilson"
                 width="264"

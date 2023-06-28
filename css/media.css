@@ -5,6 +5,16 @@
         max-width: 428px;
     }
 
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url(../images/people-office-mob2x.jpg);
+            }
+        }
+
     .features-item {
         max-width: 396px;
       
@@ -42,6 +52,15 @@
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/people-office-tab.jpg);
     }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+     .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url(../images/people-office-tab-2x.jpg);
+            }
+    }
 
     .hero-title{
 
@@ -63,6 +82,7 @@
 
     .header-container{
         height: 72px;
+        max-width: 768px;
     }
 
     .header-logo{
@@ -201,7 +221,43 @@
 
 @media screen and (min-width: 1158px) {
     .container {
-        max-width: 1158px;
+        max-width: 1440px;
+    }
+
+    .header-container{
+        max-width: 100%;
+        padding: 24px 156px;
+    }
+    
+    .address {
+        font-style: normal;
+        display: flex;
+        flex-shrink: 0;
+    
+    }
+    
+    .address-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        transition: color var(--transition);
+    
+    }
+    
+    .address-link {
+    
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        transition: color var(--transition);
+    }
+    
+    
+    .address-link:hover,
+    .address-link:focus {
+    
+        color: #404BBF
     }
     
     .hero {
@@ -210,13 +266,23 @@
         url(../images/people-office1.jpg);
     }
 
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url(../images/people-office2x.jpg);
+            }
+    }
+
     .hero-title {
         
         padding-bottom: 36px;
     }
 
     .features {
-        width: 100%;
+       max-width: 1128px;
         padding: 120px 0;
     }
 
