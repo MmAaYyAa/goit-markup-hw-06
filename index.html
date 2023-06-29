@@ -55,31 +55,40 @@
             </li>
           </ul>
         </address>
-        <button class="open-menu-button" data-menu-open type="button">
-          <svg class="open-burger" width="32" height="22">
+        <button
+          class="mobile-menu-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="32" height="22">
             <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
           </svg>
         </button>
-        <div class="mob-menu is-hidden" data-menu>
-          <div>
-            <button type="button" class="close-menu-button" data-menu-close>
-              <svg class="close-burger" width="8" height="8">
+        <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+          <div class="mobile-menu-header">
+            <button class="mobile-menu-close js-close-menu">
+              <svg width="8" height="8">
                 <use href="./images/icons.svg#icon-close-menu-burger"></use>
               </svg>
             </button>
-            <ul class="mob-menu-list list">
-              <li class="mob-menu-item">
-                <a class="mob-menu-link current-mob link" href="./index.html"
+            <ul class="mobile-menu list">
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link current-mob link" href="./index.html"
                   >Studio</a
                 >
               </li>
-              <li class="mob-menu-item">
-                <a class="mob-menu-link link" href="./portfolio.html"
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="./portfolio.html"
                   >Portfolio</a
                 >
               </li>
-              <li class="mob-menu-item">
-                <a class="mob-menu-link link" href="">Contacts</a>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="">Contacts</a>
               </li>
             </ul>
           </div>
