@@ -55,6 +55,118 @@
             </li>
           </ul>
         </address>
+        <button
+          class="mobile-menu-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+          <div class="mobile-menu-header">
+            <button class="mobile-menu-close js-close-menu">
+              <svg width="8" height="8">
+                <use href="./images/icons.svg#icon-close-menu-burger"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu list">
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="./index.html">Studio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a
+                  class="mobile-menu-link current-mob link"
+                  href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-adress-soc">
+            <address class="address-mob">
+              <ul class="address-mob-menu list">
+                <li class="address-mob-item">
+                  <a
+                    class="address-mob-link span-mob link"
+                    href="tel:+110001111111"
+                  >
+                    +11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="address-mob-item">
+                  <a
+                    class="address-mob-link link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <!-----social-mob---->
+            <div class="mob-social">
+              <ul class="mob-social-list list">
+                <li class="mob-social-item">
+                  <a
+                    class="mob-social-link"
+                    href=""
+                    target="_blank"
+                    rel="no-referrer noopener"
+                  >
+                    <svg class="mob-soc-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-social-item">
+                  <a
+                    class="mob-social-link"
+                    href=""
+                    target="_blank"
+                    rel="no-referrer noopener"
+                  >
+                    <svg class="mob-soc-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-social-item">
+                  <a
+                    class="mob-social-link"
+                    href=""
+                    target="_blank"
+                    rel="no-referrer noopener"
+                  >
+                    <svg class="mob-soc-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-social-item">
+                  <a
+                    class="mob-social-link"
+                    href=""
+                    target="_blank"
+                    rel="no-referrer noopener"
+                  >
+                    <svg class="mob-soc-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -75,12 +187,35 @@
             <li class="cards-list">
               <a class="cards-item link" href="">
                 <div class="overlay">
-                  <img
-                    src="./images/app-interface.jpg"
-                    alt="Banking app interface"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/app-interfacedesk1x.jpg 1x,
+                        ./images/app-interfacedesk2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/app-interfacetab1x.jpg 1x,
+                        ./images/app-interfacetab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/app-interfacemob1x.jpg 1x,
+                        ./images/app-interfacemob2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/app-interface.jpg"
+                      alt="Banking app interface"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
 
                   <p class="products-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -97,12 +232,35 @@
             <li class="cards-list">
               <a class="cards-item link" href="">
                 <div class="overlay">
-                  <img
-                    src="./images/payment.jpg"
-                    alt="Cashless payment"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/paymentdesk1x.jpg 1x,
+                        ./images/paymentdesk2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/paymenttab1x.jpg 1x,
+                        ./images/paymenttab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/paymentmob1x.jpg 1x,
+                        ./images/paymentmob2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/payment.jpg"
+                      alt="Cashless payment"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
 
                   <p class="products-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -119,12 +277,35 @@
             <li class="cards-list">
               <a class="cards-item link" href="">
                 <div class="overlay">
-                  <img
-                    src="./images/meditation-app.jpg"
-                    alt="Meditation"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/meditation-appdesk1x.jpg 1x,
+                        ./images/meditation-appdesk2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/meditation-apptab1x.jpg 1x,
+                        ./images/meditation-apptab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/meditation-appmob1x.jpg 1x,
+                        ./images/meditation-appmob2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/meditation-app.jpg"
+                      alt="Meditation"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
 
                   <p class="products-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -142,12 +323,35 @@
             <li class="cards-list">
               <a class="cards-item link" href="">
                 <div class="overlay">
-                  <img
-                    src="./images/taxi.jpg"
-                    alt="Taxi"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/taxidesk1x.jpg 1x,
+                        ./images/taxidesk2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/taxitab1x.jpg 1x,
+                        ./images/taxitab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/taximob1x.jpg 1x,
+                        ./images/taximob2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/taxi.jpg"
+                      alt="Taxi"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
 
                   <p class="products-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -164,12 +368,36 @@
             <li class="cards-list">
               <a class="cards-item link" href="">
                 <div class="overlay">
-                  <img
-                    src="./images/screen.jpg"
-                    alt="Screen"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/illustrationsdesk1x.jpg 1x,
+                        ./images/illustrationsdesk2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/illustrationstab1x.jpg 1x,
+                        ./images/illustrationstab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/illustrationsmob1x.jpg 1x,
+                        ./images/illustrationsmob2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/illustrations.jpg"
+                      alt="illustrations"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
 
                   <p class="products-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -186,12 +414,35 @@
             <li class="cards-list">
               <a class="cards-item link" href="">
                 <div class="overlay">
-                  <img
-                    src="./images/online-courses.jpg"
-                    alt="Online courses"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/online-coursesdesk1x.jpg 1x,
+                        ./images/online-coursesdesk2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/online-coursestab1x.jpg 1x,
+                        ./images/online-coursestab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/online-coursesmob1x.jpg 1x,
+                        ./images/online-coursesmob2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/online-courses.jpg"
+                      alt="Online courses"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
 
                   <p class="products-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -209,12 +460,35 @@
             <li class="cards-list">
               <a class="cards-item link" href="">
                 <div class="overlay">
-                  <img
-                    src="./images/stories-concept.jpg"
-                    alt="Stories"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/stories-conceptdesk1x.jpg 1x,
+                        ./images/stories-conceptdesk2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/stories-concepttab1x.jpg 1x,
+                        ./images/stories-concepttab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/stories-conceptmob1x.jpg 1x,
+                        ./images/stories-conceptmob2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/stories-concept.jpg"
+                      alt="Stories"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
 
                   <p class="products-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -231,12 +505,35 @@
             <li class="cards-list">
               <a class="cards-item link" href="">
                 <div class="overlay">
-                  <img
-                    src="./images/food.jpg"
-                    alt="Organic food"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/fooddesk1x.jpg 1x,
+                        ./images/fooddesk2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/foodtab1x.jpg 1x,
+                        ./images/foodtab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/foodmob1x.jpg 1x,
+                        ./images/foodmob2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/food.jpg"
+                      alt="Organic food"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
 
                   <p class="products-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -253,12 +550,35 @@
             <li class="cards-list">
               <a class="cards-item link" href="">
                 <div class="overlay">
-                  <img
-                    src="./images/coffee.jpg"
-                    alt="Cup of coffee"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/coffeedesk1x.jpg 1x,
+                        ./images/coffeedesk2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/coffeetab1x.jpg 1x,
+                        ./images/coffeetab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/coffeemob1x.jpg 1x,
+                        ./images/coffeemob2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/coffee.jpg"
+                      alt="Cup of coffee"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
 
                   <p class="products-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -361,5 +681,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
