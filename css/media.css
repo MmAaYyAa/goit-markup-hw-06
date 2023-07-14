@@ -76,13 +76,7 @@
         max-width: 496px;
     }
 
-    .mob-menu{
-        display: none;
-    }
-
-    .open-menu-button{
-        display: none;
-    }
+     
 
     .header-container{
         height: 72px;
@@ -213,6 +207,8 @@
     }
 
 }
+
+
 
 /*-------------Desctop-------------*/
 
